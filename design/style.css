@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html body{
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+    font-size: 15px;
+    background-color:  hsl(0, 0%, 95%);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    width: 60%;
+}
+.card__padding{
+    padding-top: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+.card__padding h1{
+    text-transform: uppercase;
+    color:  hsl(0, 0%, 95%);
+    padding-top: 25px;
+    padding-bottom:25px;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.card__padding p{
+    text-align:start;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-right: 25px;
+    box-sizing: border-box;
+    font-weight: 100;
+}
+.card__padding button{
+    padding: 18px 40px;
+    background-color:  hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 25px;
+    margin: 50px 0 40px 0;
+    box-sizing: border-box;
+}
+.card__padding button:hover{
+    background-color: transparent;
+    color: #fff;
+    border:solid 1px #fff;
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+}
+.card2{
+    background-color: hsl(184, 100%, 22%); 
+}
+.card3{
+    background-color:  hsl(179, 100%, 13%);
+}
+.card__padding .btn1{
+    color: hsl(31, 77%, 52%);
+}
+.card__padding .btn2{
+    color: hsl(184, 100%, 22%);
+}
+.card__padding .btn3{
+    color: hsl(179, 100%, 13%);
+}
+@media only screen and (max-width:1200px){
+    html,
+    body{
+        font-size:13px;
+    }
+    .card__padding button{
+        padding: 16px 33px;
+        margin: 50px 0 40px 0;
+    }
+    .card__padding{
+        padding-top: 43px;
+        padding-left: 43px;
+        box-sizing: border-box;
+    }
+}
+/* small tablets small laptop */
+@media only screen and (max-width:1023px){
+    html,
+    body{
+        font-size:11px;
+    }
+    .card__padding button{
+        padding: 14px 27px;
+        margin: 50px 0 40px 0;
+    }
+    .card__padding{
+        padding-top: 36px;
+        padding-left: 36px;
+        box-sizing: border-box;
+    }
+    
+}
+/* small tablets larger phone */
+@media only screen and (max-width:767px){
+    html,
+    body{
+        font-size:9px;
+    }
+    .card__padding button{
+        padding: 12px 21px;
+        margin: 50px 0 40px 0;
+    }
+    .card__padding{
+        padding-top: 29px;
+        padding-left: 29px;
+        box-sizing: border-box;
+    }
+    
+}
+/* small tablets larger phone */
+@media only screen and (max-width:480px){
+    .box{
+        margin: 50px 0;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
